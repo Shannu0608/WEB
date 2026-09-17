@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table Example</title>
+
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: lightblue;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tfoot {
+            background-color: lightgreen;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+
+        <!-- Table title -->
+        <caption>Student Marks</caption>
+
+        <!-- Define column groups -->
+        <colgroup>
+            <col style="background-color: #fff3cd;">
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>English</th>
+                <th>Maths</th>
+                <th>Science</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Rahul</td>
+                <td>85</td>
+                <td>90</td>
+                <td>88</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Priya</td>
+                <td>92</td>
+                <td>95</td>
+                <td>91</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Arun</td>
+                <td>78</td>
+                <td>82</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Students</td>
+                <td colspan="3">3</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
